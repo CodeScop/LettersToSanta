@@ -30,7 +30,7 @@ public class LettersController {
 	@PostMapping("/letter/new_letter")
 	public ModelAndView create_letter(Letters letters) {
 		ModelAndView mv = new ModelAndView("letters/letter-view");
-		Letters letters = lettersRepository.save(letters);
+		Letters letter = lettersRepository.save(letters);
 		mv.addObject("letter", letters);
 		return mv;
 	}
