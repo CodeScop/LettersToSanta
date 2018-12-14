@@ -9,7 +9,13 @@ public class LettersController {
 
 	@GetMapping("/")
 	public ModelAndView index() {
-		ModelAndView mv = new ModelAndView("blogpost/index");
+		ModelAndView mv = new ModelAndView("letters/index");
+		return mv;
+	}
+	
+	@GetMapping("/new_letter")
+	public ModelAndView new_letter() {
+		ModelAndView mv = new ModelAndView("letters/new");
 		return mv;
 	}
 }
