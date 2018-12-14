@@ -1,5 +1,7 @@
 package com.techtalentsouth.LettersToSanta.Letters;
 
-public interface LettersRepository {
+import org.springframework.data.repository.CrudRepository;
+
+public interface LettersRepository extends CrudRepository {
 
 }
