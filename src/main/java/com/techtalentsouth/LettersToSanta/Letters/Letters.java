@@ -13,19 +13,19 @@ public class Letters {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String name;
-	private String naughtyOrNice;
+	private boolean nice;
 	private String letterEntry;
 	private String address;
 
 	@Override
 	public String toString() {
-		return "Letters [name=" + name + ", naughtyOrNice=" + naughtyOrNice + ", letterEntry=" + letterEntry
+		return "Letters [name=" + name + ", nice=" + nice + ", letterEntry=" + letterEntry
 				+ ", address=" + address + "]";
 	}
 
-	public void Letter(String name, String behavior, String letterEntry, String address) {
+	public void Letter(String name, boolean naughtyOrNice, String letterEntry, String address) {
 		this.name = name;
-		this.naughtyOrNice = naughtyOrNice;
+		this.nice = naughtyOrNice;
 		this.letterEntry = letterEntry;
 		this.address= address;
 	}
@@ -44,12 +44,12 @@ public class Letters {
 		this.name = name;
 	}
 
-	public String getNaughtyOrNice() {
-		return naughtyOrNice;
+	public boolean getNice() {
+		return nice;
 	}
 
-	public void setNaughtyOrNice(String naughtyOrNice) {
-		this.naughtyOrNice = naughtyOrNice;
+	public void setNice(boolean nice) {
+		this.nice = nice;
 	}
 
 	public String getLetterEntry() {
