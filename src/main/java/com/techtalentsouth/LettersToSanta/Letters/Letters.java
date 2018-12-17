@@ -23,18 +23,26 @@ public class Letters {
 				+ ", address=" + address + "]";
 	}
 
+	
+	public Letters() {
+		// TODO Auto-generated constructor stub
+	}
 	public void Letter(String name, boolean naughtyOrNice, String letterEntry, String address) {
 		this.name = name;
 		this.nice = naughtyOrNice;
 		this.letterEntry = letterEntry;
 		this.address= address;
 	}
-	
-	
-	
-	public Letters() {
-		// TODO Auto-generated constructor stub
+
+	public Long getId() {
+		return id;
 	}
+
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 
 	public String getName() {
 		return name;

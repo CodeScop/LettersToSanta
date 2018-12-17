@@ -44,15 +44,15 @@ public class LettersController {
 	
 	//shows the form for editing a letter
 	@GetMapping("/letters/edit/{id}")
-	public ModelAndView updateLetterForm(@PathVariable("id") long id) {
+	public ModelAndView updateLetterForm(@PathVariable Long id) {
 		ModelAndView mv = new ModelAndView("letters/edit");
-		Optional<Letters> post = lettersRepository.findById(id);
-		mv.addObject("letter", post);
+		Optional<Letters> letter = lettersRepository.findById(id);
+		mv.addObject("letter", letter);
 		return mv;
 	}
 	
 	//saves the edits to the letter
-	@PutMapping("/letters/edit")
+	@PutMapping("/letters/update")
 	public ModelAndView updateLetter(Letters letter) {
 		ModelAndView mv = new ModelAndView("redirect:/");
 		lettersRepository.save(letter);
