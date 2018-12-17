@@ -66,4 +66,11 @@ public class LettersController {
 		lettersRepository.deleteById(id);
 		return mv;
 	}
+	
+	//gets christmasHistory.html page
+	@GetMapping("/letters/christmas-history")
+	public ModelAndView christmasHistory() {
+		ModelAndView mv = new ModelAndView("letters/christmasHistory");
+		return mv;
+	}
 }
