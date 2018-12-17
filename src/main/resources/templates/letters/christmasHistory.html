@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
   <head>
     <!-- Required meta tags -->
@@ -11,27 +11,15 @@
     <title>New Letter</title>
   </head>
   <body>
-  <div class="container">
-    <h1>Write a letter to Santa!</h1>
-    <form action="#" th:action="@{/letters/new_letter}" th:object="${letters}" method="post">
-				<div class="form-group">
-					<input type="text" class="form-control" th:field="*{name}" placeholder="What's your name?" />
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" th:field="*{address}" placeholder="What town are you from?" />
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" th:field="*{letterEntry}" placeholder="Write your letter!" />
-				</div>
-				<div class="form-group form-check">
-					<input type="checkbox" class="form-check-input" th:field="*{nice}" id="niceOrNaught" />
-					<label class="form-check-label" for="niceOrNaughty">Were you nice this year?</label>
-				</div>
-				<button type="submit" class="btn btn-success">Send Your Letter!</button>
-
-		</form>
-	</div>
-    <!-- Optional JavaScript -->
+  	<div th:replace="fragments/navbar :: navbar" ></div>
+  	<div class="container">
+  		<h1>The History of Christmas</h1>
+  	
+  		<iframe width="560" height="315" src="https://www.history.com/embed/10639427779" frameborder="0" allowfullscreen></iframe>
+  
+  	</div>
+  	
+  	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
