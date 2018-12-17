@@ -1,0 +1,42 @@
+body{
+ 	background-image: url("/images/redOrnaments.jpg");
+	/* background-attachment: fixed; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.snowball {
+	position: fixed;
+    width: 10px;
+    height: 10px;
+    z-index: 999999;
+    display: none;
+    top: 0px;
+}
+
+.easter-egg {
+    height: 262px;
+    min-width: 1100px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.topIcon {
+	height: 140px;
+}
+
+.firstCard {
+	background-color: #b2070f;
+	color: white;
+}
+
+.cardSize {
+	width: 480px;
+	/* opacity: 0.5; */
+	margin-left: 40px;
+    margin-top: 63px;
+}
+
+
