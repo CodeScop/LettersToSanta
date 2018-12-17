@@ -15,16 +15,17 @@
 	<div class="container">
 		<div class="row">
 		<div class="col-md-12">
-			<div class="panel panel-primary">
-				<div class="panel-heading">
-					<h1 th:text="${letter.name}"></h1>
-					<h1 th:text="${letter.address}"></h1>
+			<div class="card">
+				<div class="card-header">
+					<h1>Your Letter to Santa</h1>
+					<h3 th:inline="text">From: [[${letter.name}]]</h3>
+					<h3 th:inline="text">Address: [[${letter.address}]]</h3>
 				</div>
-				<div class="panel-body">
+				<div class="card-body">
 					<strong><p th:text="${letter.letterEntry}"/></strong>
-					<p th:text="${letter.nice}" />
+					<h3 th:inline="text">Naughty or Nice? [[${letter.nice}]]</h3>
 				</div>
-				<div class="panel-footer">
+				<div class="card-footer">
 					<!-- Link to Update -->
 					<!-- Link to Show  -->
 					<!--  Link to Destroy -->
