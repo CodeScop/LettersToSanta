@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 
 <html xmlns:th="http://www.thymeleaf.org">
-
-	<div th:replace="fragments/navbar :: navbar" ></div>
+	<head>
+	<title>Letters To Santa</title>
 	
-<!-- 	<div class="card cardSize">
-  		<div class="card-header">Send a Letter to Santa!
-  		</div>
-  		<div class="card-body firstCard">
-    		<h5 class="card-title"></h5>
-    		<p class="card-text">We know you've been waiting all year to tell Santa how good you were! Click the button below to get started</p>
-   	 		<a href="#" class="btn btn-primary">Start Letter</a>
-  		</div>
-	</div> -->
+	<link th:href="@{/css/index_stylesheet.css}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
+	<body>
+	<div th:replace="fragments/navbar :: navbar" ></div>
 	
 	<div class="row">
 	  <div class="col-sm-6">
