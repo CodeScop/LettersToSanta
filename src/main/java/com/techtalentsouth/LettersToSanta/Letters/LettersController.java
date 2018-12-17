@@ -27,18 +27,18 @@ public class LettersController {
 	}
 	
 	//shows the form for creating a new letter
-	@GetMapping("/letters/new_letter")
-	public ModelAndView new_letter(Letters letters) {
+	@GetMapping("/letters/new-letter")
+	public ModelAndView newLetter(Letters letter) {
 		ModelAndView mv = new ModelAndView("letters/new");
 		return mv;
 	}
 	
 	//handles the saving of the letter and shows the letter after creation
-	@PostMapping("/letters/new_letter")
-	public ModelAndView create_letter(Letters letters) {
+	@PostMapping("/letters/new-letter")
+	public ModelAndView createLetter(Letters letter) {
 		ModelAndView mv = new ModelAndView("letters/letter-view");
-		Letters letter = lettersRepository.save(letters);
-		mv.addObject("letter", letter);
+		Letters newLetter = lettersRepository.save(letter);
+		mv.addObject("letter", newLetter);
 		return mv;
 	}
 	

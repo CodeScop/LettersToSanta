@@ -13,7 +13,7 @@
   <body>
   <div class="container">
     <h1>Write a letter to Santa!</h1>
-    <form action="#" th:action="@{/letters/new_letter}" th:object="${letters}" method="post">
+    <form action="#" th:action="@{/letters/new-letter}" th:object="${letter}" method="post">
 				<div class="form-group">
 					<input type="text" class="form-control" th:field="*{name}" placeholder="What's your name?" />
 				</div>
