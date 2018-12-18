@@ -61,7 +61,7 @@ public class RecipeController {
 	//deletes recipe
 	@DeleteMapping("/recipes/delete/{id}")
 	public ModelAndView deleteLetter(@PathVariable("id") Long id) {
-		ModelAndView mv = new ModelAndView("redirect:/");
+		ModelAndView mv = new ModelAndView("redirect:/recipes");
 		recipeRepository.deleteById(id);
 		return mv;
 	}
