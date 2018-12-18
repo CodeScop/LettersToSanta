@@ -10,7 +10,7 @@
   <div th:replace="fragments/navbar :: navbar"></div>
   <div class="container">
 
-	<h1>Write a letter to Santa!</h1>
+	<h1 style= margin-left:250px>Write a recipe for others to enjoy!</h1>
     <form action="#" th:action="@{/recipes/create}" th:object="${recipe}" method="post">
 				<div class="form-group">
 					<input type="text" class="form-control" th:field="*{title}" placeholder="What's your name?" />
@@ -19,7 +19,7 @@
 					<input type="text" class="form-control" th:field="*{ingredients}" placeholder="What town are you from?" />
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" th:field="*{instructions}" placeholder="Write your letter!" />
+					<input type="text" class="form-control" th:field="*{instructions}" placeholder="Write your Recipe!" />
 				</div>
 				<button type="submit" class="btn btn-success">Enter Recipe</button>
 				<a href="/" class="btn btn-primary">Home</a>
