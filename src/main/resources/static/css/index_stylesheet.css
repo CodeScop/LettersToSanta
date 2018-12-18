@@ -2,15 +2,16 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url("https://iphonewalls.net/wp-content/uploads/2013/12/Christmas%20Presents%20and%20Decorations%20iPhone%205%20Wallpaper.jpg");
+	padding-top: 150px;
 }
 
- .topMarg {
+/*  .topMarg {
 	margin-top: 140px;
 }
 
  .topMargLetter {
 	margin-top: 200px;
-}
+} */
 
 
 .snowball {
