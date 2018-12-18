@@ -59,13 +59,15 @@ public class LettersController {
 		return mv;
 	}
 	
-	//deletes letter
+	//deletes letter - not used
+	/*
 	@DeleteMapping("/letters/delete/{id}")
 	public ModelAndView deleteLetter(@PathVariable("id") long id) {
 		ModelAndView mv = new ModelAndView("redirect:/");
 		lettersRepository.deleteById(id);
 		return mv;
 	}
+	*/
 	
 	//gets christmasHistory.html page
 	@GetMapping("/letters/christmas-history")

@@ -11,34 +11,65 @@
   <div class="containerBig">
   <div class="container">
 		
-		<div class="row justify-content-center">
-			<div class="col mt-4 text-center">
-				<a href="/recipes/add" class="btn btn-success btn-lg buttonStyle">Add A New Recipe!</a>
+<!-- 		<div class="row justify-content-center pt-3">
+			<div class="col mt-3 text-center">
 			</div>
-						<div class="col-6">
+			<div class="col">
 				<div class="card text-center firstCard">
-				  	<div class="card-body">
-				    	<h5 class="card-title" bold>Freebie</h5>
-				    	<h6 class="card-subtitle mb-2 text-muted"></h6>
-				    	<p class="card-text">Well you take understanding, add a dash of love, a sprinkle of compassion and all the patience you can muster. let it bake in the heart at 98°, Now you have a freshly baked love for humanity.</p>
-				  	</div>
-				</div>
-<			</div>
-			<div th:each="recipe:${recipes}">
-				<div class="col-12">
-					<div class="card text-center firstCard ">
-						<div class="card-header">
-							<h3 th:text="${recipe.title}" class="card-title"></h3>
-							<p th:text="${recipe.instructions}"></p>
-						</div>
-					
+					<div class="card-header">
+						<h3 class="card-title"><strong>Freebie</strong></h5>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Well you take understanding, add a dash of love, a sprinkle of compassion and all the patience you can muster. let it bake in the heart at 98°, 
 					</div>
 				</div>
 			</div>
+			</div> -->
 
+
+			<div class="card-columns mt-3">
+				<div class="card bg-white text-center p-5">
+						<a href="/recipes/add" class="btn btn-success btn-lg btn-block buttonStyle">Add A New Recipe!</a>
+				</div>
+				<div class="card text-center firstCard">
+					<div class="card-header">
+						<h3 class="card-title"><strong>Freebie</strong></h5>
+					</div>
+					<div class="card-body">
+						<p class="card-text">Well you take understanding, add a dash of love, a sprinkle of compassion and all the patience you can muster. let it bake in the heart at 98°, 
+					</div>
+				</div>
+				<div th:each="recipe:${recipes}">
+					<div class="card text-center firstCard ">
+						<div class="card-header">
+							<h3><strong th:text="${recipe.title}" class="card-title"></strong></h3>
+						</div>
+						<div class="card-body">
+							<p class="card-text" th:text="${recipe.ingredients}"></p>
+							<p class="card-text" th:text="${recipe.instructions}"></p>
+						</div>
+						<div class="card-footer">
+							<div class="row">
+								<div class="col-md-6">
+									<a th:href="@{'/recipes/edit/{id}'(id=${recipe.getId()})}" class= "btn btn-light btn-block">Edit Recipe</a>
+								</div>
+								<div class="col-md-6">
+									<form action="#" th:action="@{'/recipes/delete/{id}'(id=${recipe.getId()})}" th:method="delete" class="form-horizontal">
+											<button type="submit" class="btn btn-danger btn-block" th:text="Delete">Delete Recipe</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+<<<<<<< HEAD
   	</div>
   </div>
+=======
+	
+>>>>>>> dev
 
     
 <div th:replace="/fragments/styling :: body-links"></div>
