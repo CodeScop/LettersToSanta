@@ -92,7 +92,7 @@ body{
  	color: #ffffcc;
  	text-shadow: 2px 2px 5px green;
  	font-size: 25px !important;
- 	margin-left: 30px;
+ 	text-align: center;
  }
  
  
@@ -160,9 +160,10 @@ a.btn{
 }
 
 .cardStyling {
-	background-color: #b2070f;
+	background-color: #b2070f !important;
 	margin-left: 25%;
 	margin-right: 25%;
+	margin-top: 35px;
 }
 
 .buttonStyle {
