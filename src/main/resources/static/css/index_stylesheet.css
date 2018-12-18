@@ -171,7 +171,9 @@ a.btn{
 
 .homeBtn {
 	background-color: #a47f38 !important;
-    border-color: #8c641d !important;
+  border-color: #8c641d !important;
+  color: white;
+  text-shadow: none;
 }
 
 

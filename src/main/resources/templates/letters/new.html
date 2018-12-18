@@ -1,41 +1,16 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
-  <head>
-  	<link th:href="@{/css/index_stylesheet.css}" rel="stylesheet" type="text/css">
-    <div th:replace="/fragments/styling :: head-style"></div>
-    
+  <head th:include="/fragments/styling :: head-style">
     <title>New Letter</title>
   </head>
   <body>
   
   <div th:replace="fragments/navbar :: navbar"></div>
-  
-<!--   <div class="container">
-    <h1>Write a letter to Santa!</h1>
-    <form action="#" th:action="@{/letters/new_letter}" th:object="${letters}" method="post">
-				<div class="form-group">
-					<input type="text" class="form-control" th:field="*{name}" placeholder="What's your name?" />
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" th:field="*{address}" placeholder="What town are you from?" />
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" th:field="*{letterEntry}" placeholder="Write your letter!" />
-				</div>
-				<div class="form-group form-check">
-					<input type="checkbox" class="form-check-input" th:field="*{nice}" id="niceOrNaught" />
-					<label class="form-check-label" for="niceOrNaughty">Were you nice this year?</label>
-				</div>
-				<button type="submit" class="btn btn-success">Send Your Letter!</button>
-				<a href="/" class="btn btn-primary">Home</a>
-
-		</form>
-	</div> -->
 	
-	<div class="card borderT">
-  		<div class="card-body firstCard">
-    		<h5 class="card-title bodyText">Write a letter to Santa!</h5>
-    		<p class="card-text bodyText">Santa really loves to get letters from all the kids around the world. They tell him what they want for Christmas and if they have been naughty or nice. I know Santa would like to get a letter from you! All you have to do is complete the form below to get started! </p>
+	<div class="card firstCard bodyText m-5">
+  		<div class="card-body">
+    		<h5 class="card-title">Write a letter to Santa!</h5>
+    		<p class="card-text">Santa really loves to get letters from all the kids around the world. They tell him what they want for Christmas and if they have been naughty or nice. I know Santa would like to get a letter from you! All you have to do is complete the form below to get started! </p>
     			<form action="#" th:action="@{/letters/new_letter}" th:object="${letters}" method="post">
 					<div class="form-group">
 						<input type="text" class="form-control" th:field="*{name}" placeholder="What's your name?" />
@@ -48,10 +23,10 @@
 					</div>
 					<div class="form-group form-check">
 						<input type="checkbox" class="form-check-input" th:field="*{nice}" id="niceOrNaught" />
-						<label class="form-check-label bodyText" for="niceOrNaughty">Were you nice this year?</label>
+						<label class="form-check-label" for="niceOrNaughty">Were you nice this year?</label>
 					</div>
 					<button type="submit" class="btn btn-success buttonStyle">Send Your Letter!</button>
-					<a href="/" class="btn btn-primary homeBtn">Home</a>
+					<a href="/" class="btn homeBtn">Home</a>
 
 				</form>
   		</div>
