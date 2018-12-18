@@ -2,8 +2,16 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url("https://iphonewalls.net/wp-content/uploads/2013/12/Christmas%20Presents%20and%20Decorations%20iPhone%205%20Wallpaper.jpg");
-	
 }
+
+ .topMarg {
+	margin-top: 140px;
+}
+
+ .topMargLetter {
+	margin-top: 200px;
+}
+
 
 .snowball {
 	position: fixed;
@@ -12,14 +20,6 @@ body{
     z-index: 999999;
     display: none;
     top: 0px;
-}
-
-.easter-egg {
-    height: 262px;
-    min-width: 1100px;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
 }
 
 .topIcon {
@@ -174,13 +174,22 @@ a.btn{
     border-color: #8c641d !important;
 }
 
+.xmasHistory{
+	text-align: center;
+	color: white;
+	background-color: #b2070f;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 
 /* Snowing effect */
 @import url(https://fonts.googleapis.com/css?family=Molle:400italic&subset=latin,latin-ext);
 body{
 background-color: hsla(0,0%,0%,1);
 margin: 0px;
-overflow: hidden;
+/* overflow: hidden; */
 font-family: 'Molle', cursive;
 }
 h2{
