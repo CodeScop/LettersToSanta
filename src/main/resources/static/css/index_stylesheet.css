@@ -212,9 +212,9 @@ h2{
   background-image: url("https://ak0.picdn.net/shutterstock/videos/21682570/thumb/1.jpg");
   color: #ffffcc;
   font-family: cursive;
-  position: absolute;
+/*   position: absolute;
   right: 0;
-  left: 0;
+  left: 0; */
 }
 
 .bottomStyle {
