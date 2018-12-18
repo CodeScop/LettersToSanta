@@ -14,12 +14,13 @@ public class Letters {
 	private Long id;
 	private String name;
 	private boolean nice;
+	private String naughtyOrNice;
 	private String letterEntry;
 	private String address;
 
 	@Override
 	public String toString() {
-		return "Letters [name=" + name + ", nice=" + nice + ", letterEntry=" + letterEntry
+		return "Letters [name=" + name + ", nice=" + nice + ", naughtyOrNice=" + naughtyOrNice +", letterEntry=" + letterEntry
 				+ ", address=" + address + "]";
 	}
 
@@ -32,6 +33,11 @@ public class Letters {
 		this.nice = nice;
 		this.letterEntry = letterEntry;
 		this.address= address;
+		if(nice) {
+			this.naughtyOrNice = "nice :)";
+		}else {
+			this.naughtyOrNice = "naughty :(";
+		}
 	}
 
 	public Long getId() {
@@ -58,6 +64,15 @@ public class Letters {
 
 	public void setNice(boolean nice) {
 		this.nice = nice;
+		if(nice) {
+			this.naughtyOrNice = "nice :)";
+		}else {
+			this.naughtyOrNice = "naughty :(";
+		}
+	}
+	
+	public String getNaughtyOrNice() {
+		return naughtyOrNice;
 	}
 
 	public String getLetterEntry() {
