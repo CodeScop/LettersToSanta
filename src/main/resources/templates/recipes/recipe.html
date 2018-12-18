@@ -9,7 +9,23 @@
   
   <div th:replace="fragments/navbar :: navbar"></div>
   <div class="container">
-
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<h3 th:text="${recipe.title}" />
+					</div>
+					<div class="card-body">
+						<p th:text="${recipe.ingredients}"/>
+						<p th:text="${recipe.instructions}"/>
+					</div>
+					<div class="card-footer">
+							<a th:href="@{/recipes}"><button class="btn btn-success">All Recipes</button></a>
+							<a th:href="@{/recipes/add}"><button class="btn btn-primary">Submit a New Recipe</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
 
   </div>
     

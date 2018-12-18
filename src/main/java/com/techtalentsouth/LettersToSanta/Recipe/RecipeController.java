@@ -53,7 +53,7 @@ public class RecipeController {
 	//saves the edits to the recipe
 	@PutMapping("/recipes/update")
 	public ModelAndView updateRecipe(Recipe recipe) {
-		ModelAndView mv = new ModelAndView("redirect:/");
+		ModelAndView mv = new ModelAndView("recipes/recipe");
 		recipeRepository.save(recipe);
 		return mv;
 	}
