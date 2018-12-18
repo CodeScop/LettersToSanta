@@ -27,9 +27,9 @@ public class Letters {
 	public Letters() {
 		// TODO Auto-generated constructor stub
 	}
-	public void Letter(String name, boolean naughtyOrNice, String letterEntry, String address) {
+	public void Letter(String name, boolean nice, String letterEntry, String address) {
 		this.name = name;
-		this.nice = naughtyOrNice;
+		this.nice = nice;
 		this.letterEntry = letterEntry;
 		this.address= address;
 	}
