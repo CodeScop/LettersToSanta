@@ -1,8 +1,9 @@
 body{
- 	background-image: url("/images/redOrnaments.jpg");
+ 	/* background-image: url("https://mashtrelo.com/wp-content/uploads/2017/10/Christmas-Decoration.jpg"); */
 	/* background-attachment: fixed; */
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-image: url("https://iphonewalls.net/wp-content/uploads/2013/12/Christmas%20Presents%20and%20Decorations%20iPhone%205%20Wallpaper.jpg");
 	
 }
 
@@ -38,5 +39,65 @@ body{
 	margin-left: 40px;
     margin-top: 63px;
 }
+
+.grad1 {
+	background-image: url("/images/redGold.jpg");
+}
+
+.paddingLeft {
+	margin-left: 430px;
+}
+
+.bottom {
+	margin-bottom: 50px;
+}
+
+.navText {
+	font-size: 35px;
+    color: black;
+    font-family: cursive;
+}
+
+.navText2 {
+	font-size: 30px;
+    color: black;
+    font-family: cursive;	
+}
+
+.navText3 {
+	font-size: 23px;
+    color: black;
+    font-family: cursive;	
+}
+
+.navbackground {
+ 	background-color: #d6a352;
+ 	margin-right: 260px;
+ }
+ 
+ .bodyText {
+ 	color: #ffffcc;
+ 	text-shadow: 2px 2px 5px green;
+ }
+ 
+ .borderT {
+ 	border: none !important;
+ }
+ 
+div.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.btn{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+
+.dropDown {
+	margin-top: 15px;
+}
+
+
+
+
 
 
