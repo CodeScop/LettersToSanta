@@ -182,5 +182,10 @@ a.btn{
 .xmasHistory{
 	text-align: center;
 	color: white;
+	background-color: #b2070f;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
