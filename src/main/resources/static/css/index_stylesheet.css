@@ -203,3 +203,8 @@ h2{
   font-size:3em;
   color:hsla(255, 255%, 255%, .1);
 }
+
+#footer {
+  bottom: 0;
+  width: 100%;
+}
