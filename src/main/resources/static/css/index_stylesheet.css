@@ -169,5 +169,14 @@ a.btn{
 	margin-right: 545px !important;
 }
 
+.buttonStyle {
+	background-color: #1a6016 !important;
+	border-color: #21481e !important;
+}
+
+.homeBtn {
+	background-color: #a47f38 !important;
+    border-color: #8c641d !important;
+}
 
 
