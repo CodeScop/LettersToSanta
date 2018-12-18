@@ -72,6 +72,10 @@ body{
     text-shadow: 2px 2px 5px #ffffcc;
 }
 
+.backStyle {
+	background-color: #b2070f;
+}
+
 .navbackground {
  	/* background-color: #d6a352; */
  	margin-right: 260px;
@@ -82,14 +86,36 @@ body{
  	text-shadow: 2px 2px 5px green;
  }
  
+ .bodyText1 {
+ 	color: #ffffcc;
+ 	text-shadow: 2px 2px 5px green;
+ 	font-size: 25px !important;
+ 	margin-left: 30px;
+ }
+ 
+ 
  .borderT {
  	border: none !important;
  }
  
+ .borderT2 {
+ 	border: none !important;
+ 	margin-left: 120px !important;
+ }
+
+ .borderT3 {
+ 	border: none !important;
+ 	margin-right: 120px !important;
+ } 
+ 
+ .bottomBorder {
+ 	margin-bottom: 100px;
+ }
+ 
 div.card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-left: 50px;
-    margin-right: 100px;
+	margin-left: 10px;
+    margin-right: 77px;
     margin-top: 65px;
 }
 
@@ -102,8 +128,46 @@ a.btn{
 	color: #ffffcc !important;
 }
 
+.imageWrapper {
+	width: 30px;
+	height: 30px;
+	margin-left: 190px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
 
+.imageWrapper2 {
+	width: 30px;
+	height: 30px;
+	margin-left: 250px;
+    margin-top: -40px;
+    margin-bottom: 15px;
+}
 
+.imageWrapper3 {
+	width: 30px;
+	height: 30px;
+	margin-left: 193px;
+    margin-top: -71px;
+}
+
+.imageWrapper img {
+	width: 100%;
+}
+
+.imageWrapper2 img {
+	width: 100%;
+}
+
+.imageWrapper3 img {
+	width: 100%;
+}
+
+.cardStyling {
+	background-color: #b2070f !important;
+	margin-left: 545px !important;
+	margin-right: 545px !important;
+}
 
 
 
