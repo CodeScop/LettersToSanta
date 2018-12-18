@@ -2,29 +2,26 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<div th:replace="/fragments/styling :: head-style"></div>
-	
 	<title>Your Letter to Santa</title>
 </head>
 <body>
+	<div th:replace="fragments/navbar :: navbar" ></div>
 	<div class="container">
 		<div class="row">
 		<div class="col-md-12">
 			<div class="card">
-				<div class="card-header">
+				<div class="card-header bg-success">
 					<h1>Your Letter to Santa</h1>
 					<h3 th:inline="text">From: [[${letter.name}]]</h3>
 					<h3 th:inline="text">Address: [[${letter.address}]]</h3>
 				</div>
 				<div class="card-body">
 					<strong><p th:text="${letter.letterEntry}"/></strong>
-					<h3 th:inline="text">Naughty or Nice? [[${letter.nice}]]</h3>
+					<h4 th:inline="text">This year, you have been [[${letter.naughtyOrNice}]]</h3>
 				</div>
-				<div class="card-footer">
-					<!-- Link to Update -->
-					<!-- Link to Show  -->
-					<!--  Link to Destroy -->
-						<a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
-						<a th:href="@{/letters/new_letter}"><button class="btn btn-primary">Submit a New Letter</button></a>
+				<div class="card-footer bg-success">
+						<a th:href="@{'/letters/edit/{id}'(id=${letter.getId()})}"><button class="btn btn-danger">Need to Fix Your Letter?</button></a>
+						<a th:href="@{/letters/new_letter}"><button class="btn btn-light">Send a New Letter</button></a>
 				</div>
 			</div>
 		</div>

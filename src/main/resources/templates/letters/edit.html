@@ -4,9 +4,11 @@
     <title>Edit Letter</title>
   </head>
   <body>
-  <div class="container">
-    <h2>Need to make some changes?</h2>
-    <form action="#" th:action="@{/letters/update}" th:object="${letter}" method="put">
+  <div th:replace="fragments/navbar :: navbar" ></div>
+  <div class="card firstCard bodyText m-5">
+    <div class="card-body">
+    <h3 class="card-title">Need to make some changes?</h3>
+    <form action="#" th:action="@{/letters/update}" th:object="${letter}" th:method="put">
 				<input type="hidden" th:field="*{id}"></input>
 				<div class="form-group">
 					<input type="text" class="form-control" th:field="*{name}" placeholder="What's your name?" />
@@ -21,9 +23,10 @@
 					<input type="checkbox" class="form-check-input" th:field="*{nice}" id="niceOrNaught" />
 					<label class="form-check-label" for="niceOrNaughty">Were you nice this year?</label>
 				</div>
-				<button type="submit" class="btn btn-success">Send Your Letter!</button>
+				<button type="submit" class="btn btn-light">Send Your Final Letter - NO TAKEBACKS!</button>
 
 		</form>
+	</div>
 	</div>
 	
 	
