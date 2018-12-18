@@ -73,4 +73,11 @@ public class LettersController {
 		ModelAndView mv = new ModelAndView("letters/christmasHistory");
 		return mv;
 	}
+	
+	//gets explore.html page
+	@GetMapping("/letters/explore")
+	public ModelAndView explore() {
+		ModelAndView mv = new ModelAndView("letters/explore");
+		return mv;
+	}
 }
