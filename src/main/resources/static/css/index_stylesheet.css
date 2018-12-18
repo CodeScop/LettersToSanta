@@ -205,6 +205,16 @@ h2{
 }
 
 #footer {
-  bottom: 0;
   width: 100%;
+  background-image: url("https://ak0.picdn.net/shutterstock/videos/21682570/thumb/1.jpg");
+  color: #ffffcc;
+  font-family: cursive;
+  padding-bottom: 50px;
+}
+
+.text-right {
+	float: right;
+    margin-right: 44px;
+    margin-bottom: 63px;
+    margin-top: -40px;
 }
