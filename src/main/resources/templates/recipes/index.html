@@ -10,7 +10,7 @@
   <div th:replace="fragments/navbar :: navbar"></div>
   <div class="container">
 		<a href="/recipes/add" class="btn btn-success">Add A New Recipe!</a>
-		<div class="row">
+		<div class="row justify-content-center">
 			<div th:each="recipe:${recipes}">
 				<div class="col-12">
 					<div class="card text-center bg-white text-success">
