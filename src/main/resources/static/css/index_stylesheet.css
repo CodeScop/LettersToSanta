@@ -109,15 +109,9 @@ body{
  	margin-right: 120px !important;
  } 
  
- .bottomBorder {
- 	margin-bottom: 100px;
- }
- 
-div.card {
+	.card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-left: 10px;
-    margin-right: 77px;
-    margin-top: 65px;
+	margin: 1em;
 }
 
 a.btn{
@@ -165,9 +159,9 @@ a.btn{
 }
 
 .cardStyling {
-	background-color: #b2070f !important;
-	margin-left: 545px !important;
-	margin-right: 545px !important;
+	background-color: #b2070f;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 .buttonStyle {
