@@ -29,6 +29,7 @@ body{
 .firstCard {
 	background-color: #b2070f;
 	color: white;
+	border: 0px solid #b2070f;
 }
 
 .cardSize {
