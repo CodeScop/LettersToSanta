@@ -14,7 +14,7 @@
       <div class="card-body">
 		<h3 class="nameLetter" th:inline="text">From: [[${letter.name}]]</h3>
 		<h5 class="card-title postcardTitle">Dear Santa, </h5>
-		<h3 th:inline="text">Address: [[${letter.address}]]</h3>   
+		<h3 th:inline="text">Hometown: [[${letter.address}]]</h3>   
         <strong><p class="adjustPosition" th:text="${letter.letterEntry}"/></strong>
 		<h4 class="niceOr" th:inline="text">This year, you have been [[${letter.naughtyOrNice}]]</h3>	
 		<a class="niceOr" th:href="@{'/letters/edit/{id}'(id=${letter.getId()})}"><button class="btn btn-danger">Need to Fix Your Letter?</button></a>

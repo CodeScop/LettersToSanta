@@ -81,11 +81,7 @@ body{
 	background-color: #b2070f;
 }
 
-.navbackground {
- 	/* background-color: #d6a352; */
- 	margin-right: 260px;
- }
- 
+
  .bodyText {
  	color: #ffffcc;
  	text-shadow: 2px 2px 5px green;
@@ -209,22 +205,13 @@ h2{
 }
 
 #footer {
-  background-image: url("https://ak0.picdn.net/shutterstock/videos/21682570/thumb/1.jpg");
-  color: #ffffcc;
-  font-family: cursive;
+  background-image: url("https://ak0.picdn.net/shutterstock/videos/21682570/thumb/1.jpg");  
 }
 
-.text-right {
-	float: right;
-    margin-right: 44px;
-    margin-bottom: 63px;
-    margin-top: -40px;
+.text-site, a.text-site {
+	color: #ffffcc;
+	font-family: cursive;
 }
-
-.text-left {
-	text-align: center!important;
-}
-
 .containerBig {
 	margin-top: 180px;
 	min-height: 100vh;
