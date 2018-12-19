@@ -8,27 +8,25 @@
 	<div th:replace="fragments/navbar :: navbar" ></div>
 	
 	<div class="containerBig">
-	<div class="container">
-		<div class="row">
-		<div class="col-md-12">
-			<div class="card">
-				<div class="card-header bg-success">
-					<h1>Your Letter to Santa</h1>
-					<h3 th:inline="text">From: [[${letter.name}]]</h3>
-					<h3 th:inline="text">Address: [[${letter.address}]]</h3>
-				</div>
-				<div class="card-body">
-					<strong><p th:text="${letter.letterEntry}"/></strong>
-					<h4 th:inline="text">This year, you have been [[${letter.naughtyOrNice}]]</h3>
-				</div>
-				<div class="card-footer bg-success">
-						<a th:href="@{'/letters/edit/{id}'(id=${letter.getId()})}"><button class="btn btn-danger">Need to Fix Your Letter?</button></a>
-						<a th:href="@{/letters/new_letter}"><button class="btn btn-light">Send a New Letter</button></a>
-				</div>
-			</div>
-		</div>
-	</div>
-	</div>
+	<div class="row">
+  <div class="col-sm-6">
+    <div class="card postcard">
+      <div class="card-body">
+		<h3 class="nameLetter" th:inline="text">From: [[${letter.name}]]</h3>
+		<h5 class="card-title postcardTitle">Dear Santa, </h5>
+		<h3 th:inline="text">Address: [[${letter.address}]]</h3>   
+        <strong><p class="adjustPosition" th:text="${letter.letterEntry}"/></strong>
+		<h4 class="niceOr" th:inline="text">This year, you have been [[${letter.naughtyOrNice}]]</h3>	
+		<a class="niceOr" th:href="@{'/letters/edit/{id}'(id=${letter.getId()})}"><button class="btn btn-danger">Need to Fix Your Letter?</button></a>
+		<a class="sendBtn" th:href="@{/letters/new_letter}"><button class="btn btn-light buttonStyle">Send a New Letter</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+	
+	
 	</div>
 	
 	<div th:replace="/fragments/styling :: body-links"></div>
