@@ -172,13 +172,14 @@ a.btn{
 .buttonStyle {
 	background-color: #1a6016 !important;
 	border-color: #21481e !important;
+	color: white;
 }
 
 .homeBtn {
 	background-color: #a47f38 !important;
-  border-color: #8c641d !important;
-  color: white;
-  text-shadow: none;
+ 	border-color: #8c641d !important;
+  	color: white;
+  	text-shadow: none;
 }
 
 .xmasHistory{
@@ -196,7 +197,6 @@ a.btn{
 body{
 background-color: hsla(0,0%,0%,1);
 margin: 0px;
-/* overflow: hidden; */
 font-family: 'Molle', cursive;
 }
 h2{
@@ -212,13 +212,6 @@ h2{
   background-image: url("https://ak0.picdn.net/shutterstock/videos/21682570/thumb/1.jpg");
   color: #ffffcc;
   font-family: cursive;
-/*   position: absolute;
-  right: 0;
-  left: 0; */
-}
-
-.bottomStyle {
-	
 }
 
 .text-right {
@@ -235,4 +228,47 @@ h2{
 .containerBig {
 	margin-top: 180px;
 	min-height: 100vh;
+	margin-bottom: 100px;
 }
+
+.postcard {
+	background-image: url("/images/postcard.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 720px;
+	height: 425px;
+	margin-left: 357px;
+}
+
+.postcardTitle {
+	margin-top: 10px;
+	margin-left: 275px;
+}
+
+.adjustPosition {
+	margin-left: 295px;
+	margin-top: -50px;
+	margin-bottom: 80px;
+}
+
+.niceOr {
+	margin-left: 295px;
+}
+
+.sendBtn {
+	margin-left: 11px;
+}
+
+.nameLetter {
+	margin-top: 132px;
+}
+
+.santaStamp {
+	border-radius: 50%;
+	
+}
+
+
+
+
+
