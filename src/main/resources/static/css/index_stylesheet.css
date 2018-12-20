@@ -215,9 +215,9 @@ a.btn{
 /* Snowing effect */
 @import url(https://fonts.googleapis.com/css?family=Molle:400italic&subset=latin,latin-ext);
 body{
-background-color: hsla(0,0%,0%,1);
-margin: 0px;
-font-family: 'Molle', cursive;
+	background-color: hsla(0,0%,0%,1);
+	margin: 0px;
+	font-family: 'Molle', cursive;
 }
 h2{
   left: 50%;
