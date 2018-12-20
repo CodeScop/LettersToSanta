@@ -9,20 +9,20 @@
   	<div th:replace="fragments/navbar :: navbar" ></div>
   	
   	<div class="containerBig">
-  	<div class="container">
+  	<div class="container contactContainer">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="card">
+				<div class="card contactCard">
 					<div class="card-header">
 						<h1>Message Sent!</h1>
-						<h3 th:inline="text">[[${message.name}]]</h3>
-						<h3 th:inline="text">[[${message.subject}]]</h3>
+						<h3> Your Name: [[${message.name}]]</h3>
+						<h3> Subject: [[${message.subject}]]</h3>
 					</div>
 					<div class="card-body">
-						<strong><p th:text="${message.message}"/></strong>
+						<strong><p> Your message to us: [[${message.message}]]</strong>
 					</div>
 					<div class="card-footer">
-							<a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
+							<a th:href="@{/}"><button class="btn btn-success buttonStyle">Back To Home Page</button></a>
 					</div>
 				</div>
 			</div>
