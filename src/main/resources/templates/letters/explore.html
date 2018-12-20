@@ -1,114 +1,163 @@
 <!DOCTYPE html>
 
 <html xmlns:th="http://www.thymeleaf.org">
-	<head>
+<head th:include="/fragments/styling :: head-style">
 	<title>Christmas Around The World</title>
 	
-	<link th:href="@{/css/index_stylesheet.css}" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	</head>
+</head>
 	
-	<body class="topMargLetter">
-		<div th:replace="fragments/navbar :: navbar" ></div>
+<body class="topMargLetter">
+	<div th:replace="fragments/navbar :: navbar" ></div>
 		
-		<div class="containerBig">
+	<div class="containerBig">
 		<div class="card cardStyling">
 		  <div class="card-body">
 		    <h5 class="card-title bodyText1">Explore how the world celebrates Christmas!</h5>
 		  </div>
 		</div>
 		
-		<div class="row text">
+		<div class="row px-5">
+
+			<!-- Iceland -->
 		  <div class="col-sm-6">
-		    <div class="card borderT2">
-		      <div class="card-body firstCard">
-		        <h5 class="card-title bodyText">Christmas in Iceland</h5>
-		        <div class="imageWrapper">
-		        <img src="https://cdn.countryflags.com/thumbs/iceland/flag-button-round-250.png"/>
-		        </div>
-		        <p class="card-text bodyText">Icelanders take Christmas very seriously. They clean their whole house from bottom to the top, decorate it with lights and Christmas decorations and put up a Christmas tree in their living room. They bake Christmas cookies, eat clementines and make a crispy flatbread called Laufabrauð in Icelandic (see the picture on the right). But mostly, Christmas traditions in Iceland is about getting together with your family. And of course enjoying good food and exchanging presents.
-					On Christmas, Icelanders celebrate the birth of Christ and also the beginning of the lengthening daylight hours. This celebration is deeply rooted in most Icelanders, since it coincides with the darkest period of the year.
-				</p>
+		    <div class="card hollyCard">
+		      <div class="card-body ">
+		      	<div class="d-inline-flex">
+			        <h5 class="card-title bodyText">Christmas in Iceland</h5>
+			        <div class="imageWrapper">
+			        	<img src="https://cdn.countryflags.com/thumbs/iceland/flag-button-round-250.png"/>
+			        </div>
+			      </div>
+	        	<p class="card-text bodyText">
+	        		Icelanders take Christmas very seriously. They clean their whole house from bottom to the top, decorate it with lights and Christmas decorations and put up a Christmas tree in their living room. They bake Christmas cookies, eat clementines and make a crispy flatbread called Laufabrauð in Icelandic (see the picture on the right). But mostly, Christmas traditions in Iceland is about getting together with your family. And of course enjoying good food and exchanging presents.
+	        	</p>
+						<p class="card-text bodyText">
+							On Christmas, Icelanders celebrate the birth of Christ and also the beginning of the lengthening daylight hours. This celebration is deeply rooted in most Icelanders, since it coincides with the darkest period of the year.
+						</p>
 		      </div>
 		    </div>
 		  </div>
+
+		  <!-- Mexico -->
 		  <div class="col-sm-6">
-		    <div class="card borderT3">
-		      <div class="card-body firstCard">
-		        <h5 class="card-title bodyText">Christmas in Mexico</h5>
-		        <div class="imageWrapper">
-		        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Mexico_flag_icon.svg/2000px-Mexico_flag_icon.svg.png"/>
-		        </div>
-		        <p class="card-text bodyText">In Mexico, Christmas is celebrated from December 12th to January 6th.
-					From December 16th to Christmas Eve, children often perform the 'Posada' processions or Posadas. Posada is Spanish for Inn or Lodging. There are nine Posadas. These celebrate the part of the Christmas story where Joseph and Mary looked for somewhere to stay. For the Posadas, the outside of houses are decorated with evergreens, moss and paper lanterns.Each night a different house holds the Posada party. At the final Posada, on Christmas Eve, a manger and figures of shepherds are put on to the board. When the Posada house has been found, a baby Jesus is put into the manger and then families go to a midnight Church service. After the Church service there are more fireworks to celebrate the start of Christmas.
-				</p>
+		    <div class="card hollyCard">
+		      <div class="card-body ">
+		      	<div class="d-inline-flex">
+			        <h5 class="card-title bodyText">Christmas in Mexico</h5>
+			        <div class="imageWrapper">
+			        	<img src="https://cdn.countryflags.com/thumbs/mexico/flag-button-round-250.png"/>
+			        </div>
+			      </div>
+		        <p class="card-text bodyText">
+		        	In Mexico, Christmas is celebrated from December 12th to January 6th.</p>
+		        <p class="card-text bodyText">
+		        	From December 16th to Christmas Eve, children often perform the 'Posada' processions or Posadas. Posada is Spanish for Inn or Lodging. There are nine Posadas. These celebrate the part of the Christmas story where Joseph and Mary looked for somewhere to stay. For the Posadas, the outside of houses are decorated with evergreens, moss and paper lanterns.Each night a different house holds the Posada party. At the final Posada, on Christmas Eve, a manger and figures of shepherds are put on to the board. When the Posada house has been found, a baby Jesus is put into the manger and then families go to a midnight Church service. After the Church service there are more fireworks to celebrate the start of Christmas.
+						</p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <!-- Philippines -->
+		  <div class="col-sm-6">
+		    <div class="card hollyCard">
+		      <div class="card-body">
+		        <div class="d-inline-flex">
+			        <h5 class="card-title bodyText">Christmas in the Philippines</h5>
+			        <div class="imageWrapper">
+			        	<img src="https://cdn.countryflags.com/thumbs/philippines/flag-button-round-250.png"/>
+			        </div>
+			      </div>
+		        <p class="card-text bodyText">
+		        	Christmas is the most important holiday in the Philippines. People in the Philippines like to celebrate Christmas for long period of time! Who wouldn’t? The wonderful Christmas carols in shops can start as early as September, although the formal Christmas celebrations begin on the 16th of December. This begins the first of nine per-dawn masses. The last mass is on Christmas day, but the celebrations continue to the First Sunday in January when Epiphany or the Feast of the Three Kings is celebrated.
+		        </p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <!-- Austria -->
+		  <div class="col-sm-6">
+		    <div class="card hollyCard">
+		      <div class="card-body">
+		        <div class="d-inline-flex">
+			        <h5 class="card-title bodyText">Christmas in Austria</h5>
+			        <div class="imageWrapper">
+			        	<img src="https://cdn.countryflags.com/thumbs/austria/flag-button-round-250.png"/>
+			        </div>
+			      </div>
+			      <p class="card-text bodyText">
+				      Austria shares many Christmas traditions with its neighbor Germany, but also has many special Christmas customs of its own.
+				    </p>
+						<p class="card-text bodyText">
+							During Advent, many families will have an Advent Wreath made from evergreen twigs and decorated with ribbons and four candles. On each of the four Sundays in Advent, a candle is lit and a carol or two might be sung!
+							Most towns will have a 'Christkindlmarkt' (Christmas market) from late November or early December, selling Christmas decorations, food (like gingerbread) and Glühwein (sweet, warm mulled wine). Cities like Vienna, Innsbruck and Salzburg have huge markets and people from all over the world visit them.
+						</p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <!-- Sweden -->
+		  <div class="col-sm-6">
+		    <div class="card hollyCard">
+		      <div class="card-body">
+		        <div class="d-inline-flex">
+			        <h5 class="card-title bodyText">Christmas in Sweden</h5>
+			        <div class="imageWrapper">
+			        	<img src="https://cdn.countryflags.com/thumbs/sweden/flag-button-round-250.png"/>
+			        </div>
+			      </div>
+		        <p class="card-text bodyText">
+		        	Around Christmas time in Sweden, one of the biggest celebrations is St. Lucia's Day (or St. Lucy's Day) on December 13th. This celebration comes from stories that were told by Monks who first brought Christianity to Sweden.
+		        </p>
+		        <p class="card-text bodyText">
+		        	In Sweden, presents are brought by Santa who's known as 'Jultomten' or just 'Tomten' (that mean 'The Christmas Gnome' or 'The Gnome'). He's often helped by gnomes/elves which are called 'Nissar' (male elves/gnomes) or 'Nissor' (female gnomes/elves). The end of Christmas in Sweden is on January 13th (twenty days after Christmas) which is called 'Tjugondag Knut' (Twentieth Day Knut) or 'Tjugondag jul' (Twentieth Day Yule).
+						</p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <!-- Japan -->
+		  <div class="col-sm-6">
+		    <div class="card hollyCard">
+		      <div class="card-body">
+		      	<div class="d-inline-flex">
+			        <h5 class="card-title bodyText">Christmas in Japan</h5>
+			        <div class="imageWrapper">
+			        	<img src="https://cdn.countryflags.com/thumbs/japan/flag-button-round-250.png"/>
+			        </div>
+			      </div>
+		        <p class="card-text bodyText">
+		        	Christmas has only been widely celebrated in Japan for the last few decades. It's still not seen as a religious holiday or celebration as there aren't many Christians in Japan. Now several customs that came to Japan from the USA such as sending and receiving Christmas cards and presents are popular.
+		        </p>
+						<p class="card-text bodyText">
+							In Japan, Christmas in known as more of a time to spread happiness rather than a religious celebration. Christmas Eve is often celebrated more than Christmas Day. Christmas Eve is thought of as a romantic day, in which couples spend together and exchange presents. In many ways it resembles Valentine's Day celebrations in the UK and the USA. Young couples like to go for walks to look at the Christmas lights and have a romantic meal in a restaurant - booking a table on Christmas Eve can be very difficult as it's so popular!
+						</p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <!-- The Netherlands -->
+		  <div class="col-sm-6">
+		    <div class="card hollyCard">
+		      <div class="card-body ">
+		      	<div class="d-inline-flex">
+			        <h5 class="card-title bodyText">Christmas in the Netherlands</h5>
+			        <div class="imageWrapper">
+			        	<img src="https://cdn.countryflags.com/thumbs/netherlands/flag-button-round-250.png"/>
+			        </div>
+			      </div>
+	        	<p class="card-text bodyText">
+	        		For most children in The Netherlands, the most important day during December is 5th December, when Sinterklaas (St. Nicholas) brings them their presents! St. Nicholas' Day is on the 6th December, but in The Netherlands, the major celebrations are held on the 5th December, St. Nicholas' Eve. The name Santa Claus comes from the name Sinterklaas.
+	        	</p>
+						<p class="card-text bodyText">
+							It all starts on the second Saturday of November (the first Saturday after 11th November) when Sinterklaas travels to a city or town in The Netherlands. Dutch tradition says that St. Nicholas lives in Madrid, Spain and every year he chooses a different harbour to arrive in Holland, so as many children as possible get a chance to see him.
+						</p>
 		      </div>
 		    </div>
 		  </div>
 		</div>
-	
-	<div class="row">
-	  <div class="col-sm-6">
-	    <div class="card borderT2">
-	      <div class="card-body firstCard">
-	        <h5 class="card-title bodyText">Christmas in the Philippines</h5>
-	        <div class="imageWrapper2">
-	        <img src="https://cdn3.iconfinder.com/data/icons/world-flags-circled-vol-3/48/Philppines-512.png"/>
-	        </div>
-	        <p class="card-text bodyText">Christmas is the most important holiday in the Philippines. People in the Philippines like to celebrate Christmas for long period of time! Who wouldn’t? The wonderful Christmas carols in shops can start as early as September, although the formal Christmas celebrations begin on the 16th of December. This begins the first of nine per-dawn masses. The last mass is on Christmas day, but the celebrations continue to the First Sunday in January when Epiphany or the Feast of the Three Kings is celebrated.</p>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="col-sm-6">
-	    <div class="card borderT3">
-	      <div class="card-body firstCard">
-	        <h5 class="card-title bodyText">Christmas in Sweden</h5>
-	        <div>
-	        <img class="imageWrapper3" src="https://cdn4.iconfinder.com/data/icons/world-flags-circular/1000/Flag_of_Sweden_-_Circle-512.png"/>
-	        </div>
-	        <p class="card-text bodyText">Around Christmas time in Sweden, one of the biggest celebrations is St. Lucia's Day (or St. Lucy's Day) on December 13th. This celebration comes from stories that were told by Monks who first brought Christianity to Sweden.
-				In Sweden, presents are brought by Santa who's known as 'Jultomten' or just 'Tomten' (that mean 'The Christmas Gnome' or 'The Gnome'). He's often helped by gnomes/elves which are called 'Nissar' (male elves/gnomes) or 'Nissor' (female gnomes/elves).
-				The end of Christmas in Sweden is on January 13th (twenty days after Christmas) which is called 'Tjugondag Knut' (Twentieth Day Knut) or 'Tjugondag jul' (Twentieth Day Yule).
-			</p>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	
-	<div class="row">
-	  <div class="col-sm-6">
-	    <div class="card borderT2">
-	      <div class="card-body firstCard">
-	        <h5 class="card-title bodyText">Christmas in Austria</h5>
-	        <div>
-	        <img class="imageWrapper3" src="https://cdn4.iconfinder.com/data/icons/europe-country-flags/105/AUSTRIA-512.png"/>
-	        </div>
-	        <p class="card-text bodyText">Austria shares many Christmas traditions with its neighbor Germany, but also has many special Christmas customs of its own.
-				During Advent, many families will have an Advent Wreath made from evergreen twigs and decorated with ribbons and four candles. On each of the four Sundays in Advent, a candle is lit and a carol or two might be sung!
-				Most towns will have a 'Christkindlmarkt' (Christmas market) from late November or early December, selling Christmas decorations, food (like gingerbread) and Glühwein (sweet, warm mulled wine). Cities like Vienna, Innsbruck and Salzburg have huge markets and people from all over the world visit them.
-			</p>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="col-sm-6">
-	    <div class="card borderT3 bottomBorder">
-	      <div class="card-body firstCard">
-	        <h5 class="card-title bodyText">Christmas in Japan</h5>
-	        <div>
-	        <img class="imageWrapper3" src="https://www.clipartmax.com/png/middle/170-1703392_japan-flag-png-image-japan-flag-icon-round.png"/>
-	        </div>
-	        <p class="card-text bodyText">Christmas has only been widely celebrated in Japan for the last few decades. It's still not seen as a religious holiday or celebration as there aren't many Christians in Japan. Now several customs that came to Japan from the USA such as sending and receiving Christmas cards and presents are popular.
-				In Japan, Christmas in known as more of a time to spread happiness rather than a religious celebration. Christmas Eve is often celebrated more than Christmas Day. Christmas Eve is thought of as a romantic day, in which couples spend together and exchange presents. In many ways it resembles Valentine's Day celebrations in the UK and the USA. Young couples like to go for walks to look at the Christmas lights and have a romantic meal in a restaurant - booking a table on Christmas Eve can be very difficult as it's so popular!
-			</p>
-	      </div>
-	    </div>
-	  </div>
-	</div>
 	</div>
 	
 	<div th:replace="/fragments/styling :: body-links"></div>
-	</body>
+</body>
 	
 </html>

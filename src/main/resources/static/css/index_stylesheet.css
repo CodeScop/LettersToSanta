@@ -8,15 +8,6 @@ body{
 	padding: 0;
 }
 
-/*  .topMarg {
-	margin-top: 140px;
-}
-
- .topMargLetter {
-	margin-top: 200px;
-} */
-
-
 .snowball {
 	position: fixed;
     width: 10px;
@@ -30,11 +21,7 @@ body{
 	height: 140px;
 }
 
-.firstCard {
-	background-color: #b2070f;
-	color: white;
-	border: 0px solid #b2070f;
-}
+
 
 .cardSize {
 	width: 480px;
@@ -85,6 +72,7 @@ body{
  .bodyText {
  	color: #ffffcc;
  	text-shadow: 2px 2px 5px green;
+ 	font-family: sans-serif;
  }
  
  .bodyText1 {
@@ -95,23 +83,30 @@ body{
  }
  
  
- .borderT {
+.borderT {
  	border: none !important;
  }
  
- .borderT2 {
+.borderT2 {
  	border: none !important;
  	margin-left: 120px !important;
  }
 
- .borderT3 {
+.borderT3 {
  	border: none !important;
  	margin-right: 120px !important;
  } 
  
-	.card {
+.card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	margin: 1em;
+}
+
+.hollyCard {
+	background-color: #b2070f;
+	color: white;
+	border: 0px solid #b2070f;
+	
 }
 
 a.btn{
@@ -124,6 +119,12 @@ a.btn{
 }
 
 .imageWrapper {
+	width: 30px;
+	height: 30px;
+	margin-left: 1em;
+}
+
+.imageWrapper1 {
 	width: 30px;
 	height: 30px;
 	margin-left: 190px;
@@ -147,6 +148,10 @@ a.btn{
 }
 
 .imageWrapper img {
+	width: 100%;
+}
+
+.imageWrapper1 img {
 	width: 100%;
 }
 
