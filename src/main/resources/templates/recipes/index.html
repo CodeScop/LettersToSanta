@@ -13,15 +13,20 @@
 
 
 			<div class="card-columns mt-3">
-				<div class="card bg-white text-center p-2">
+				<div class="card text-center p-2 btnBackDrop">
 						<a href="/recipes/add" class="btn btn-success btn-lg btn-block buttonStyle">Add A New Recipe!</a>
 				</div>
 				<div class="card text-center firstCard">
 					<div class="card-header">
-						<h3 class="card-title"><strong>Freebie</strong></h5>
+						<h3 class="card-title"><strong>Freshly baked love for humanity!</strong></h5>
 					</div>
 					<div class="card-body">
-						<p class="card-text">Well you take understanding, add a dash of love, a sprinkle of compassion and all the patience you can muster. let it bake in the heart at 98°, now you have freshly baked love for humanity! 
+						<p class="card-text">Ingredients: </p> 
+						<p>- Start with a little understanding</p>
+						<p>- Add a dash of love</p>
+						<p>- A sprinkle of compassion</p>
+						<p>- Lastly add all the patience you can muster</p>
+						<p>Instructions: Mix all ingredients together and let it bake in the heart at 98° this is the perfect recipe for freshly baked love for humanity!</p>
 					</div>
 				</div>
 				<div th:each="recipe:${recipes}">
@@ -36,7 +41,7 @@
 						<div class="card-footer">
 							<div class="row">
 								<div class="col-md-6">
-									<a th:href="@{'/recipes/edit/{id}'(id=${recipe.getId()})}" class= "btn btn-light btn-block">Edit Recipe</a>
+									<a th:href="@{'/recipes/edit/{id}'(id=${recipe.getId()})}" class= "btn btn-light btn-block buttonStyle">Edit Recipe</a>
 								</div>
 								<div class="col-md-6">
 									<form action="#" th:action="@{'/recipes/delete/{id}'(id=${recipe.getId()})}" th:method="delete" class="form-horizontal">

@@ -2,19 +2,9 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-image: url("https://iphonewalls.net/wp-content/uploads/2013/12/Christmas%20Presents%20and%20Decorations%20iPhone%205%20Wallpaper.jpg");
-/* 	padding-top: 150px;
-	padding-bottom: 150px; */
 	margin: 0;
 	padding: 0;
 }
-
-/*  .topMarg {
-	margin-top: 140px;
-}
-
- .topMargLetter {
-	margin-top: 200px;
-} */
 
 
 .snowball {
@@ -32,13 +22,13 @@ body{
 
 .firstCard {
 	background-color: #b2070f;
-	color: white;
+	color: #ffffcc;
 	border: 0px solid #b2070f;
+	text-shadow: 2px 2px 5px #31311a;
 }
 
 .cardSize {
 	width: 480px;
-	/* opacity: 0.5; */
 	margin-left: 40px;
     margin-top: 63px;
 }
@@ -158,6 +148,33 @@ a.btn{
 	width: 100%;
 }
 
+.contactCard {
+	background-color: #b2070f !important;
+ 	border: none !important;
+ 	color: #ffffcc;
+ 	text-align: center;
+    font-family: cursive;	
+    text-shadow: 2px 2px 5px #31311a;
+    width: 75%;
+}
+
+.recipeCard {
+	background-color: #b2070f !important;
+ 	border: none !important;
+ 	color: #ffffcc;
+ 	text-align: center;
+    font-family: cursive;	
+    text-shadow: 2px 2px 5px #31311a;
+    margin-left: 125px !important;
+    margin-right: 125px !important;
+    box-shadow: -4px -4px #000000 , opacity: 0.4;;
+}
+
+
+.contactContainer {
+	margin-left: 332px;
+}
+
 .cardStyling {
 	background-color: #b2070f !important;
 	margin-left: 25%;
@@ -165,10 +182,17 @@ a.btn{
 	margin-top: 35px;
 }
 
+
+.btnBackDrop {
+	color: #eab05a !important;
+	
+}
+
 .buttonStyle {
 	background-color: #1a6016 !important;
 	border-color: #21481e !important;
-	color: white;
+	color: #ffffcc;
+	
 }
 
 .homeBtn {
@@ -250,10 +274,6 @@ h2{
 	margin-top: 132px;
 }
 
-.santaStamp {
-	border-radius: 50%;
-	
-}
 
 
 

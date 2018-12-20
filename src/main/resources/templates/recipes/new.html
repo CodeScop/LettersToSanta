@@ -10,7 +10,7 @@
   <div th:replace="fragments/navbar :: navbar"></div>
   <div class="containerBig">
   <div class="container">
-		<div class="card bg-white m-3 p-3">
+		<div class="card bg-white m-3 p-3 recipeCard">
 			<h1>Share a recipe for others to enjoy!</h1>
 		    <form action="#" th:action="@{/recipes/create}" th:object="${recipe}" method="post">
 					<div class="form-group">
@@ -22,8 +22,8 @@
 					<div class="form-group">
 						<textarea class="form-control" th:field="*{instructions}" placeholder="Write your Recipe!" rows="5" />
 					</div>
-					<button type="submit" class="btn btn-success">Enter Recipe</button>
-					<a href="/recipes" class="btn btn-danger">Back to All Recipes</a>
+					<button type="submit" class="btn btn-danger buttonStyle">Enter Recipe</button>
+					<a href="/recipes" class="btn btn-danger buttonStyle">Back to All Recipes</a>
 			</form>
 		</div>
   </div>
