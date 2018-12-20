@@ -18,7 +18,7 @@
         <strong><p class="adjustPosition" th:text="${letter.letterEntry}"/></strong>
 		<h4 class="niceOr" th:inline="text">This year, you have been [[${letter.naughtyOrNice}]]</h3>	
 		<a class="niceOr" th:href="@{'/letters/edit/{id}'(id=${letter.getId()})}"><button class="btn btn-danger">Need to Fix Your Letter?</button></a>
-		<a class="sendBtn" th:href="@{/letters/new_letter}"><button class="btn btn-light buttonStyle">Send a New Letter</button></a>
+		<a class="sendBtn" th:href="@{/}"><button class="btn btn-light buttonStyle">Send your Letter</button></a>
       </div>
     </div>
   </div>
